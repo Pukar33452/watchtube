@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchTube</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <div class="menu-btn"><i class="fas fa-bars"></i></div>
+            <div class="logo">WatchTube</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="right-header">
+            <button class="upload-btn"><i class="fas fa-video"></i></button>
+            <button class="apps-btn"><i class="fas fa-th"></i></button>
+            <button class="notifications-btn"><i class="fas fa-bell"></i></button>
+            <button class="user-btn"><i class="fas fa-user-circle"></i></button>
+        </div>
+    </header>
+    <nav class="side-nav">
+        <ul>
+            <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-fire"></i> Trending</a></li>
+            <li><a href="#"><i class="fas fa-photo-video"></i> Subscriptions</a></li>
+            <li><a href="#"><i class="fas fa-folder"></i> Library</a></li>
+            <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Watch Later</a></li>
+            <li><a href="#"><i class="fas fa-thumbs-up"></i> Liked Videos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="video">
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2>Never Gonna Give You Up</h2>
+                <p>Artist: Rick Astley</p>
+                <p>Views: 100,000</p>
+                <p>Uploaded: Jan 1, 2024</p>
+            </div>
+            <div class="video-actions">
+                <button class="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                <button class="dislike-btn"><i class="fas fa-thumbs-down"></i></button>
+                <button class="share-btn"><i class="fas fa-share"></i></button>
+                <button class="save-btn"><i class="fas fa-save"></i></button>
+                <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+            <div class="channel-info">
+                <div class="channel-logo">
+                    <img src="https://via.placeholder.com/50" alt="Channel Logo">
+                </div>
+                <div class="channel-details">
+                    <h3>Rick Astley</h3>
+                    <p>1M subscribers</p>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <div class="comments">
+                <h3>Comments</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Add a public comment"></textarea>
+                    <button type="submit">Post</button>
+                </form>
+                <ul>
+                    <li>
+                        <div class="comment-author">User1</div>
+                        <div class="comment-text">Nice video!</div>
+                    </li>
+                    <li>
+                        <div class="comment-author">User2</div>
+                        <div class="comment-text">I love this song!</div>
+                    </li>
+                    <!-- Display actual comments dynamically -->
+                </ul>
+            </div>
+        </div>
+        <div class="suggested-videos">
+            <h3>Suggested Videos</h3>
+            <div class="suggested-video">
+                <img src="https://via.placeholder.com/150" alt="Thumbnail">
+                <div class="suggested-video-info">
+                    <h4>Another Cool Video</h4>
+                    <p>Channel Name</p>
+                    <p>500K views • 2 days ago</p>
+                </div>
+            </div>
+            <div class="suggested-video">
+                <img src="https://via.placeholder.com/150" alt="Thumbnail">
+                <div class="suggested-video-info">
+                    <h4>Amazing Tutorial</h4>
+                    <p>Channel Name</p>
+                    <p>1M views • 1 week ago</p>
+                </div>
+            </div>
+            <!-- More suggested videos -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 WatchTube. All rights reserved.</p>
+    </footer>
+</body>
+</html>
